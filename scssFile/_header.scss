@@ -1,0 +1,44 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerLeft > div{
+    font-family: Heebo;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.headerRight{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // border:1px solid red;
+    min-width: 45%;
+    max-width: 90%;
+}
+.headerRight>div{
+    margin-left: 22px;
+}
+.thickLine{
+    margin-right: 10%;
+    display: none;
+}
+.thickLine > div{
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+    margin-top: 4px;
+}
+@media (max-width:760px) {
+    .thickLine{
+        display:block;
+    }
+    .headerRight{
+        display: none;
+    }
+}

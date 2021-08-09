@@ -1,0 +1,52 @@
+
+$headingColor:#333333;
+$FontFamily:'Poppins';
+$paragraphColor:#4F4F4F;
+$blueColor:#2D9CDB;
+
+.heading{
+    color: $headingColor;
+    font-family: $FontFamily;
+    font-weight: 500;
+}
+.paragraph{
+    font-family: $FontFamily;
+    color: $paragraphColor;
+    font-weight: normal;
+}
+.largeButton{
+    height: 42px;
+    width: 116px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: $blueColor;
+}
+.smallButton{
+    height: 49px;
+    width: 94px;    
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: $blueColor;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    padding: 2%
+
+}
+
+@import './variables';
+@import './header';
+@import './sectioOne';
+@import './sectionTwo';
+@import './sectionThree';
+@import './sectionFour';
+@import './footer';
+
