@@ -1,0 +1,135 @@
+.sectionTwo{
+    margin: 40px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.sectionTwoLower{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    // border: 1px solid green;
+}
+.sectionTwoUpper > p{
+    margin-top: 25px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 54px;
+    margin-left: 5%;
+    // border: 1px solid black;
+
+}
+.sectionTwoCard > p:nth-child(2){
+    
+    font-size: 24px;
+    font-style: normal;
+    margin-top: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    
+}
+.sectionTwoCard > p:nth-child(3){
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 10px;
+    
+}
+.sectionTwoCard > div:nth-child(4){
+    background: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #828282;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+
+    &:hover{
+        background-color: $blueColor;
+        color: white;
+    }
+
+}
+.sectionTwoBlock1{
+    height: 67px;
+    width: 67px;
+    border-radius: 16px;
+    background: #2D9CDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fa-pen{
+    color: white;
+    transform: scale(1.5);
+}
+.fa-server,.fa-greater-than,.fa-less-than{
+    color: white;
+    transform: scale(1.5);
+}
+.fa-less-than{
+    margin-right: 10px;
+}
+.sectionTwoBlock2{
+    height: 67px;
+    width: 67px;
+    border-radius: 16px;
+    background: #27AE60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sectionTwoBlock3{
+    height: 67px;
+    width: 67px;
+    border-radius: 16px;
+    background: #EB5757;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionTwoCard{
+    margin: 20px 0px;
+    width: 32%;
+    // border: 1px solid orangered;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+    border-radius:10px;
+    &:hover{
+        box-shadow: 0px 10px 30px 0px #2221211a;
+    }
+}
+
+@media (max-width:960px) {
+    .sectionTwoLower{
+        flex-direction: column;
+    }
+    .sectionTwoCard{
+        width: 70%;
+        border: 1px solid rgb(158, 157, 157);
+        justify-content: center;
+        align-items: center;
+    }
+}

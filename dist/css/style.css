@@ -14,9 +14,13 @@
   height: 42px;
   width: 116px;
   border-radius: 12px;
-  outline: none;
-  border: none;
+  -webkit-transition: .4s all ease-in-out;
+  transition: .4s all ease-in-out;
+}
+
+.largeButton:hover {
   background-color: #2D9CDB;
+  color: white;
 }
 
 .smallButton {
@@ -36,7 +40,7 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   padding: 2%;
 }
 
@@ -208,7 +212,7 @@ body {
   margin-left: -102px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 960px) {
   .sectionOneFirst > p:nth-child(1) {
     font-size: 12px;
   }
@@ -230,6 +234,194 @@ body {
   }
   .sectionOneThird > div > div > button {
     margin-left: -102px;
+  }
+}
+
+.sectionTwo {
+  margin: 40px auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sectionTwoLower {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.sectionTwoUpper > p {
+  margin-top: 25px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px;
+  margin-left: 5%;
+}
+
+.sectionTwoCard > p:nth-child(2) {
+  font-size: 24px;
+  font-style: normal;
+  margin-top: 16px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.sectionTwoCard > p:nth-child(3) {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.sectionTwoCard > div:nth-child(4) {
+  background: #E0E0E0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #828282;
+  margin-top: 16px;
+  cursor: pointer;
+  -webkit-transition: .4s all ease-in-out;
+  transition: .4s all ease-in-out;
+}
+
+.sectionTwoCard > div:nth-child(4):hover {
+  background-color: #2D9CDB;
+  color: white;
+}
+
+.sectionTwoBlock1 {
+  height: 67px;
+  width: 67px;
+  border-radius: 16px;
+  background: #2D9CDB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fa-pen {
+  color: white;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.fa-server, .fa-greater-than, .fa-less-than {
+  color: white;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.fa-less-than {
+  margin-right: 10px;
+}
+
+.sectionTwoBlock2 {
+  height: 67px;
+  width: 67px;
+  border-radius: 16px;
+  background: #27AE60;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionTwoBlock3 {
+  height: 67px;
+  width: 67px;
+  border-radius: 16px;
+  background: #EB5757;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionTwoCard {
+  margin: 20px 0px;
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2%;
+  cursor: pointer;
+  -webkit-transition: .4s all ease-in-out;
+  transition: .4s all ease-in-out;
+  border-radius: 10px;
+}
+
+.sectionTwoCard:hover {
+  -webkit-box-shadow: 0px 10px 30px 0px #2221211a;
+          box-shadow: 0px 10px 30px 0px #2221211a;
+}
+
+@media (max-width: 960px) {
+  .sectionTwoLower {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectionTwoCard {
+    width: 70%;
+    border: 1px solid #9e9d9d;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

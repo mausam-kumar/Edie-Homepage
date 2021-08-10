@@ -18,9 +18,13 @@ $blueColor:#2D9CDB;
     height: 42px;
     width: 116px;
     border-radius: 12px;
-    outline: none;
-    border: none;
-    background-color: $blueColor;
+    // outline: none;
+    // border: 1px solid black;
+    transition: .4s all ease-in-out;
+    &:hover{
+        background-color: $blueColor;
+        color: white;
+    }
 }
 .smallButton{
     height: 49px;
@@ -37,7 +41,7 @@ $blueColor:#2D9CDB;
     box-sizing: border-box;
 }
 body{
-    width: 100%;
+    width: 100vw;
     padding: 2%
 
 }
