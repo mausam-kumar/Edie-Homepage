@@ -1,0 +1,108 @@
+.footer{
+    margin: 0px auto;
+    padding-top: 20px;
+    width: 100%;
+    background: #100E1D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    color: white;
+    text-decoration: none;
+}
+.footerUpper{
+    display: flex;
+    justify-content: space-around;
+}
+.footerUpperFirst > li{
+    text-decoration: none;
+    list-style: none;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.footerUpperSecond{
+
+    &>div:nth-child(1){
+        font-family: Heebo;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 53px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    & > div:nth-child(2) > i{
+        height: 24.000022888183594px;
+        width: 23.999656677246094px;
+
+        border-radius: 0px;
+        color: #100E1D;
+        // background: #F2F2F2;
+    }
+}
+.footerUpperThird{
+
+    // border: 1px solid white;
+    &>p:nth-child(1){
+        color: white;
+    }
+    & > div > input{
+        height: 57px;
+        width: 350px;
+        border-radius: 12px;
+        background: #F2F2F2;
+        border: none;
+        outline: none;  
+    }
+    & > div > input::placeholder{
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 4%;
+              
+    }
+    & > div > button{
+        margin-left: -100px;
+        // transform: translateX(-100px);
+
+    }
+}
+.footerLower{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerLower > a{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgb(185, 36, 36);
+    text-decoration: none;
+
+}
+
+@media (max-width:960px) {
+    .footerUpper{
+        flex-direction: column;
+        width: 100%;
+        margin: 20px auto;
+    }
+    .footerUpper > div{
+        margin-top: 50px;
+    }
+}
